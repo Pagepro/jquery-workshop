@@ -25,7 +25,7 @@ To make this working, project should ran on PHP enabled server.
 
 * Fetch data from `list-static` endpoint.
 * Render the list based on API response.
-* TODO item HTML template: `<li><a href="sadd873" class="delete js-delete"></a> todo name</li>`
+* TODO item HTML template: `<li><a href="#sadd873" class="delete js-delete"></a> todo name</li>`
 
 
 ### Instructions:
@@ -48,6 +48,7 @@ $.ajax({
 ```
 
 * on AJAX success render the list of todo items
+* use `$.each`
 
 ## Step 2: submit todo items
 
