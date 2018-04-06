@@ -1,0 +1,42 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Todo List</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <link rel="stylesheet" href="site.css"/>
+  </head>
+<body>
+    <section class="section">
+        <div class="container">
+            <h1 class="title">TODO List</h1>
+            <form action="./api.php" method="POST" class="js-form">
+                <div class="columns">
+                    <div class="column is-two-thirds">
+                        <div class="field">
+                          <div class="control">
+                            <input class="input js-input" type="text" placeholder="Type here">
+                          </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="control">
+                          <button class="button is-primary">Submit</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <ul class="js-list">
+                <li>
+                    <span class="icon has-text-success">
+                      <i class="fas fa-spinner fa-pulse"></i>
+                    </span>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="./app.js"></script>
+</body>
+</html>
