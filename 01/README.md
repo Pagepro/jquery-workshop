@@ -9,3 +9,19 @@ To make this working, project should ran on PHP enabled server.
 * `api.php?action=list` [GET] - dynamic list of todo items
 * `api.php?action=add` [POST] - dynamic list of todo items, params: name [string: todo name]
 * `api.php?action=delete` [GET] - dynamic list of todo items, params: item [string: todo id]
+
+
+# Aplication
+
+## Functionalities
+
+* Add todo item: watch for form submit, send todo name to API
+* Render todo list: fetch todo items from API and dispaly on the website
+* Delete todo item: watch for delete link clicks and send info to API and remove deleted item from the list
+
+## Step 1
+
+* Fetch data from `list-static` endpoint.
+* Render the list based on API response.
+* TODO item HTML template: `<li><a href="sadd873" class="delete js-delete"></a> todo name</li>`
+
