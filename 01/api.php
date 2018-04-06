@@ -3,7 +3,6 @@
 session_start();
 
 if (!isset($_SESSION['items']) ) {
-    echo 'restoring session';
     $_SESSION['items'] = array();
 }
 
