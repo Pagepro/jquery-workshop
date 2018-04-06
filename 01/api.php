@@ -24,7 +24,7 @@ if ($action == 'list') {
     ));
 } else if ($action == 'add') {
     if (isset($_POST['name'])) {
-        array_push( $_SESSION['items'], array(
+        array_unshift( $_SESSION['items'], array(
             'id' => uniqid(),
             'name' => $_POST['name']
         ));
