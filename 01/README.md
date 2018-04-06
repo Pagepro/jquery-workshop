@@ -25,3 +25,23 @@ To make this working, project should ran on PHP enabled server.
 * Render the list based on API response.
 * TODO item HTML template: `<li><a href="sadd873" class="delete js-delete"></a> todo name</li>`
 
+
+-- create app.js file
+-- define function initialRender
+-- function should contain `console.log('initialRender')` for now
+-- run the function
+
+
+-- add AJAX fetch to the function
+-- example AJAX fetch:
+```
+$.ajax({
+  url: "test.html",
+  success: function (resp) {
+    console.log(resp)
+  }
+})
+```
+
+-- on AJAX success
+
