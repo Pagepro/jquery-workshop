@@ -11,7 +11,7 @@ To make this working, project should ran on PHP enabled server.
 * `api.php?action=delete` [GET] - dynamic list of todo items, params: item [string: todo id]
 
 
-# Aplication
+# Application
 
 ## Functionalities
 
@@ -19,21 +19,25 @@ To make this working, project should ran on PHP enabled server.
 * Render todo list: fetch todo items from API and dispaly on the website
 * Delete todo item: watch for delete link clicks and send info to API and remove deleted item from the list
 
-## Step 1
+## Step 1: display static list of todo items
+
+### Scope of work:
 
 * Fetch data from `list-static` endpoint.
 * Render the list based on API response.
 * TODO item HTML template: `<li><a href="sadd873" class="delete js-delete"></a> todo name</li>`
 
 
--- create app.js file
--- define function initialRender
--- function should contain `console.log('initialRender')` for now
--- run the function
+### Instructions:
+
+* create app.js file
+* define function initialRender
+* function should contain `console.log('initialRender')` for now
+* run the function
 
 
--- add AJAX fetch to the function
--- example AJAX fetch:
+* add AJAX fetch to the function
+* example AJAX fetch:
 ```
 $.ajax({
   url: "test.html",
@@ -43,5 +47,7 @@ $.ajax({
 })
 ```
 
--- on AJAX success
+* on AJAX success render the list of todo items
+
+## Step 2: submit todo items
 
