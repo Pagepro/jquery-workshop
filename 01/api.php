@@ -13,10 +13,10 @@ function printItems () {
 }
 
 if ($action == 'list') {
-    sleep(2);
+    sleep(1);
     printItems();
 } else if ($action == 'list-static') {
-    sleep(2);
+    sleep(1);
     echo json_encode(array(
         array('id' => 1, 'name' => 'Learn JS'),
         array('id' => 2, 'name' => 'Learn CSS'),
@@ -40,7 +40,6 @@ if ($action == 'list') {
         foreach ($_SESSION['items'] as $key => $item) {
             if ($item['id'] === $_GET['id']) {
                 unset($_SESSION['items'][$key]);
-                // echo json_encode(array('status' => 'ok'));
                 printItems();
                 exit;
             }
